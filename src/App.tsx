@@ -343,7 +343,7 @@ export default function App() {
                 <div className="mb-10 flex items-center justify-center">
                   <div className="w-20 h-20 p-2 border border-stone-200">
                     <img 
-                      src="/public/imagenes/isotipo.png"
+                      src="/imagenes/isotipo.png"
                       alt="Luxe Perfil Isotipo" 
                       className="w-full h-full object-contain filter grayscale brightness-50"
                       referrerPolicy="no-referrer"
@@ -776,8 +776,8 @@ export default function App() {
             {/* Visual Comparison IA Slider */}
             <FadeIn delay={0.4} className="mt-12 bg-stone-900 border border-stone-800">
               <ImageComparer 
-                before="public/imagenes/premium.jpg" 
-                after="public/imagenes/basico.jpg" 
+                before="/imagenes/premium.jpg" 
+                after="/imagenes/basico.jpg" 
               />
               <div className="p-8 text-center bg-stone-900/50">
                 <p className="text-stone-500 font-light text-xs tracking-[0.2em] uppercase">Desliza para ver la transformación de calidad</p>
@@ -806,7 +806,7 @@ export default function App() {
                 <div className="group h-full flex flex-col">
                   <div className="aspect-[3/4] overflow-hidden mb-8 bg-stone-100 relative">
                     <img 
-                      src="public/imagenes/roller.png" 
+                      src="/imagenes/roller.png" 
                       alt="Roller Star Argentina" 
                       className="w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-all duration-700 group-hover:scale-105"
                       referrerPolicy="no-referrer"
@@ -834,7 +834,7 @@ export default function App() {
                 <div className="group h-full flex flex-col">
                   <div className="aspect-[3/4] overflow-hidden mb-8 bg-stone-100 relative">
                     <img 
-                      src="public/imagenes/compactas.png" 
+                      src="/imagenes/compactas.png" 
                       alt="Persianas Compactas" 
                       className="w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-all duration-700 group-hover:scale-105"
                       referrerPolicy="no-referrer"
@@ -862,7 +862,7 @@ export default function App() {
                   <div className="absolute top-0 right-0 w-32 h-32 bg-accent-600/10 blur-[80px]" />
                   <div className="aspect-[3/4] overflow-hidden mb-8 bg-stone-900 border border-stone-800 relative">
                     <img 
-                      src="public/imagenes/luxe.jpeg" 
+                      src="/imagenes/luxe.jpeg" 
                       alt="Luxe Perfil" 
                       className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-all duration-700 group-hover:scale-110"
                       referrerPolicy="no-referrer"
@@ -1142,7 +1142,7 @@ export default function App() {
                   className="w-full h-full object-cover outline-none"
                   poster=""
                 >
-                  <source src="public/imagenes/cierre.mp4" type="video/mp4" />
+                  <source src="/imagenes/cierre.mp4" type="video/mp4" />
                   Tu navegador no soporta el reproductor de video.
                 </video>
               </div>
