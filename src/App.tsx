@@ -59,12 +59,7 @@ const FadeIn = ({ children, delay = 0, direction = "up", className = "" }: FadeI
       opacity: 1, 
       y: 0, 
       x: 0,
-      scale: 1,
-      transition: { 
-        duration: 1.2, 
-        delay, 
-        ease: [0.16, 1, 0.3, 1] // Custom quint ease
-      }
+      scale: 1
     }
   };
 
@@ -74,6 +69,11 @@ const FadeIn = ({ children, delay = 0, direction = "up", className = "" }: FadeI
       whileInView="visible"
       viewport={{ once: false, amount: 0.2 }}
       variants={variants}
+      transition={{ 
+        duration: 1.2, 
+        delay, 
+        ease: "easeOut"
+      }}
       className={className}
     >
       {children}
